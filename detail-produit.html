@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalle Service | Transit : Rapide, Fiable, Abordable</title>
+    <link rel="shortcut icon" href="../images/Header/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    
+
+    <section id="header">
+        
+        <a href="index.html"><img src="images/Header/logo.png" alt="LE LOGO" class="logo" width="200" height="100"></a>
+
+        <div>
+            <ul id="navbar">       
+                <li> <a class="active" href="index.html">ACCUEIL</a></li>
+                <li><a class="" href="boutique.html">BOUTIQUE</a></li>
+                <li><a class="" href="contact.html">CONTACT</a></li> 
+                <li><a class="" href="a-propos.html">A PROPOS</a></li>
+                <li id="lg-bag"><a class="active" href="panier.html"><i class="fa fa-shopping-bag" aria-hidden="true"></i></a></li>
+                <a href="#" id="close"><i class="fa-regular fa-circle-xmark"></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="panier.html"><i class="fa fa-shopping-bag" aria-hidden="true"></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </section>
+
+   
+
+   <section id="prodetail" class="section-p1">
+        
+            <div class="single-pro-image">
+                <img src="./images/produits/mb1.jpg" width="100%" id="mainImg" alt="IMAGE">
+                
+            </div>
+            <div class="single-pro-detail">
+                <h6>KALLE SERVICE</h6>
+                <h4>Mabre</h4>
+                <h2>DT 500</h2>
+
+
+                <form action="/add_panier" method="post">
+                    <input type="number" name="quantite" placeholder="10" required>
+                    <input type="text" name="id" value="<%= detail_p._id %>" hidden>
+                    <input type="text" name="reference" value="<%= detail_p.reference %>" hidden>
+                    <input type="email" name="parapharmacie" value="<%= emailPara.email %>" hidden>
+                    <button class="normal"> Commander maintenant</button>
+                </form>
+               
+                <h4>Details Produit</h4>
+                <p>
+                    <strong>Description</strong> <br> 
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+            </div>
+       
+   </section>
+
+   <section id="product" class="section-p1">
+        <h2>Produit Similaires</h2>
+        <p>Nouvelle collection 2023</p>
+        <div class="pro-container">
+            
+                    <div class="pro" onclick="window.location.href='#'">
+                        <img src="./images/produits/mb1.jpg" alt="IMAGE PRODUIT">
+                        <div class="des">
+                            <span>Marque</span>
+                            <h5>Nom</h5>
+                            <div class="star">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <h4>DT 500</h4>
+                        </div>
+                        <a href="" class="cart"><i class="fa fa-shopping-cart"></i></a>
+                    </div>
+           
+           
+        </div>
+    </section>
+
+
+    <section id="newsletters" class="section-p1 section-m1">
+        <div class="newstext">
+            <h4>Souscrivez à notre Newsletters</h4>
+            <p>Recevoir des mises à jour par E-mail sur nos actualités et <span> offres spéciales</span></p>
+        </div>
+        <div class="form">
+            <input type="text" placeholder="Votre adresse E-mail">
+            <button class="normal">Soumettre</button>
+        </div>
+    </section>
+    
+    <footer class="section-p1">
+        <div class="col">
+            <img class="logo" src="images/Header/logo.png" alt="LOGO" width="250" height="120">
+            <h4>Contact</h4>
+            <p><strong>Adresse: </strong> Av Mohamed V, Tunis</p>
+            <p><strong>Téléphone: </strong> (+216) 27 536 292</p>
+            <p><strong>Heures: </strong> H24/24, Lundi - Dimanche</p>
+    
+            <div class="follow">
+                <h4>Suivez-nous</h4>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+        </div>
+       
+        
+        <div class="col">
+            <h4>A propos</h4>
+            <a href="a-propos.html">Qui sommes-nous</a>
+            <a href="#">Politique de confidentialité</a>
+            <a href="#">Termes et Conditions</a>
+            <a href="contact.html">Nous contacter</a>
+        </div>
+        <div class="col">
+            <h4>Mon compte</h4>
+            <a href="#">Se connecter</a>
+            <a href="#">Consulter mon panier</a>
+            <a href="#">Liste de souhaits</a>
+            <a href="#">Suivre ma commande</a>
+            <a href="#">Aide</a>
+        </div>
+        
+        <div class="copy-right">
+            <p> © 2023. KALLE SERVICE.tn- Website</p>
+        </div>
+    </footer>
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../script.js"></script>
+    </body>
+    </html>
